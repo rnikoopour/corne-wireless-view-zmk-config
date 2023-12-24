@@ -39,7 +39,7 @@
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)   AS(Y) AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)   AS(H) AS(J)  AS(K)     AS(L)     AS(SEMI)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)   AS(N) AS(M)  AS(DOT) &kp LCTRL &kp LALT
+   AS(Z) AS(X) AS(C) AS(V) AS(B)   AS(N) AS(M)  AS(DOT)   &kp LCTRL &kp LALT
         &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp BSPC
                         >;
                 };
@@ -52,7 +52,7 @@
 //               | GUI |     | SPC |     | ENT |     | ALT |
                         label = "Lower";
                         bindings = <
-   &none        &none        &none        &none        &none          &none    &none    &none  &none     &none
+   &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans
    &bt BT_CLR   &trans       &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans 
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans &trans    &trans 
                              &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
