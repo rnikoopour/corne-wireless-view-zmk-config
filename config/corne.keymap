@@ -63,15 +63,15 @@
 // -----------------------------------------------------------------------------------------
 // | 1 |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  |
 // | - |  =  |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /  |  \  |
-// | _ |  +  |     |  <  |  :  |     |  ;  |  >  |  .  |  ?  | "|" |
+// | _ |  +  |  `  |  <  |  :  |     |  ;  |  >  |  .  |  ?  | "|" |
 //           | ESC |     | SPC |     | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
 
-   AS(N1)    AS(N2)    AS(N3)   AS(N4)   AS(N5)        AS(N6)    AS(N7)    AS(N8)   AS(N9)    AS(N0)
-   &kp MINUS &kp EQUAL &kp LBRC &kp LBKT &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC &kp FSLH  &kp BSLH
-   &kp UNDER &kp PLUS  &trans   &kp LT   &kp COLON     &kp SEMI  &kp GT    &kp DOT   &kp QMARK &kp PIPE
-                       &kp ESC  &trans   &kp SPACE     &kp RET   &trans    &kp RALT
+   AS(N1)    AS(N2)    AS(N3)    AS(N4)   AS(N5)        AS(N6)    AS(N7)    AS(N8)   AS(N9)    AS(N0)
+   &kp MINUS &kp EQUAL &kp LBRC  &kp LBKT &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC &kp FSLH  &kp BSLH
+   &kp UNDER &kp PLUS  AS(GRAVE) &kp LT   &kp COLON     &kp SEMI  &kp GT    &kp DOT   &kp QMARK &kp PIPE
+                       &kp ESC   &trans   &kp SPACE     &kp RET   &trans    &kp RALT
                         >;
                 };
         };
