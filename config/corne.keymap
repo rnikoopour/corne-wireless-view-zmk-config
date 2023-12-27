@@ -1,3 +1,6 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with <open> and enter text in its buffer.
+
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
@@ -31,15 +34,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   |  P   |
-// |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   |  '   | 
-// |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   |  .   | CTRL | META |
+// |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U   |  I   |  O   | P |
+// |  A  |  S  |  D  |  F  |  G  |     |  H  |  J   |  K   |  L   | ' | 
+// |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M   | CTRL | META | . |
 //             | GUI | LWR | SPC |     | ENT | RSE  | BSPC |
                         label = "Base";
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y) AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H) AS(J)  AS(K)     AS(L)     AS(SQT)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N) AS(M)  AS(DOT)   &kp LCTRL &kp RALT
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N) AS(M)  &kp LCTL  &kp RALT  AS(DOT)
         &kp LGUI &mo 1 &kp SPACE     &kp RET &mo 2 &kp BSPC
                         >;
                 };
@@ -61,17 +64,17 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9( |  0) |
-// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /? |  \| |
-// | `~ |     | TAB |  <  |  :  |     |  ;  |  >  |     |  ,  |  .  |
+// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
+// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
+// | `~ |     | TAB |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
 //            | ESC | GUI | SPC |     | ENT |     | ALT |
                         label = "Raise";
                         bindings = <
 
-   AS(N1)    AS(N2)    AS(N3)    AS(N4)   AS(N5)        AS(N6)    AS(N7)    AS(N8)   AS(N9)    AS(N0)
-   AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC AS(FSLH)  AS(BSLH)
-   AS(GRAVE) &trans    &kp TAB   &kp LT   &kp COLON     &kp SEMI  &kp GT    &trans   &kp COMMA &kp DOT
-                       &kp ESC   &kp LGUI &kp SPACE     &kp RET   &trans    &kp RALT
+   AS(N1)    AS(N2)    AS(N3)    AS(N4)    AS(N5)        AS(N6)    AS(N7)    AS(N8)    AS(N9)   AS(N0)
+   AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT  &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC  AS(FSLH) AS(BSLH)
+   AS(GRAVE) &trans    &kp TAB   AS(COMMA) &kp COLON     &kp SEMI  AS(DOT)   &kp LCTRL &kp RALT &trans
+                       &kp ESC   &kp LGUI  &kp SPACE     &kp RET   &trans    &kp RALT
                         >;
                 };
         };
