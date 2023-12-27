@@ -71,7 +71,7 @@
    AS(N1)    AS(N2)    AS(N3)    AS(N4)   AS(N5)        AS(N6)    AS(N7)    AS(N8)   AS(N9)    AS(N0)
    AS(MINUS) AS(EQUAL) &kp LBRC  &kp LBKT &kp LPAR      &kp RPAR  &kp RBKT  &kp RBRC AS(FSLH)  AS(BSLH)
    AS(GRAVE) &trans    &kp TAB   &kp LT   &kp COLON     &kp SEMI  &kp GT    &trans   &kp COMMA &kp DOT
-                       &kp ESC   &kp GUI  &kp SPACE     &kp RET   &trans    &kp RALT
+                       &kp ESC   &kp LGUI &kp SPACE     &kp RET   &trans    &kp RALT
                         >;
                 };
         };
